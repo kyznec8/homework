@@ -1,0 +1,121 @@
+@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  font-family: Roboto;
+}
+
+.kanban {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  background-color: #cccccc;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #333333;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.form__input:focus-visible {
+  outline: 2px #333333 solid;
+}
+
+.form__button {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 0 30px;
+}
+
+.form__button:hover {
+  background-color: #222222;
+  cursor: pointer;
+}
+
+.columns {
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  min-width: 150px;
+  width: 100%;
+  height: 100%;
+  background-color: #cccccc;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column__title {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #eeeeee;
+  padding: 10px;
+  border: 4px solid #333333;
+  box-shadow: 4px 4px 0 #888888;
+}
+
+.column__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.column__drop {
+  background-color: transparent;
+  height: 20px;
+  width: 100%;
+}
+
+.column__drop_hovered {
+  background-color: #aaaaaa;
+}
+
+.column__item {
+  background-color: #eeeeee;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.column__item:hover {
+  cursor: pointer;
+}
+
+.column__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.column__icon {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: #eeeeee;
+  background-color: #333333;
+}
+
+.column__icon:hover {
+  background-color: #222222;
+  cursor: pointer;
+}
